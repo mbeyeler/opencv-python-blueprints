@@ -39,7 +39,7 @@ class FeatureMatching:
         # initialize SURF
         self.min_hessian = 400
         self.SURF = cv2.SURF(self.min_hessian)
-''
+
         # template image: "train" image
         # later on compared ot each video frame: "query" image
         self.img_obj = cv2.imread(train_image, cv2.CV_8UC1)
