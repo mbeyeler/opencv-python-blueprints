@@ -23,6 +23,15 @@ class Classifier:
         - evaluate:  A method to test the classifier by predicting labels of
                      some test data based on the trained model.
 
+        A classifier also needs to specify a classification strategy via 
+        setting self.mode to either "one-vs-all" or "one-vs-one".
+        The one-vs-all strategy involves training a single classifier per
+        class, with the samples of that class as positive samples and all
+        other samples as negatives.
+        The one-vs-one strategy involves training a single classifier per
+        class pair, with the samples of the first class as positive samples
+        and the samples of the second class as negative samples.
+
         This class also provides method to calculate accuracy, precision,
         recall, and the confusion matrix.
     """

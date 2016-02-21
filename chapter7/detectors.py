@@ -76,9 +76,9 @@ class FaceDetector:
             cv2.rectangle(frame, (x, y), (x + w, y + h), (100, 255, 0), 2)
             head = cv2.cvtColor(frame[y:y + h, x:x + w],
                                 cv2.COLOR_RGB2GRAY)
-            return True, frame, head
+            return True, frame, head, (x, y)
 
-        return False, frame, None
+        return False, frame, None, (0, 0)
 
     def align_head(self, head):
         """Aligns a head region using affine transformations

@@ -23,6 +23,15 @@ class Classifier:
         - evaluate:  A method to test the classifier by predicting labels of
                      some test data based on the trained model.
 
+        A classifier also needs to specify a classification strategy via 
+        setting self.mode to either "one-vs-all" or "one-vs-one".
+        The one-vs-all strategy involves training a single classifier per
+        class, with the samples of that class as positive samples and all
+        other samples as negatives.
+        The one-vs-one strategy involves training a single classifier per
+        class pair, with the samples of the first class as positive samples
+        and the samples of the second class as negative samples.
+
         This class also provides method to calculate accuracy, precision,
         recall, and the confusion matrix.
     """
@@ -172,7 +181,8 @@ class MultiLayerPerceptron(Classifier):
         of the MLP must equal the number of classes used in classification.
     """
 
-    def __init__(self, layer_sizes, class_labels, params=None):
+    def __init__(self, layer_sizes, class_labels, params=None, 
+                 class_mode="one-vs-all"):
         """Constructor
 
             The constructor initializes the MLP.
@@ -181,6 +191,17 @@ class MultiLayerPerceptron(Classifier):
                                   output]
             :param class_labels:  vector of human-readable (string) class
                                   labels
+            :param class_mode:    Classification mode:
+                                  - "one-vs-all": The one-vs-all strategy 
+                                    involves training a single classifier per 
+                                    class, with the samples of that class as 
+                                    positive samples and all other samples as 
+                                    negatives.
+                                  - "one-vs-one": The one-vs-one strategy 
+                                    involves training a single classifier per
+                                    class pair, with the samples of the first 
+                                    class as positive samples and the samples 
+                                    of the second class as negative samples.
             :param params:        MLP training parameters.
                                   For now, default values are used.
                                   Hyperparamter exploration can be achieved
@@ -194,6 +215,7 @@ class MultiLayerPerceptron(Classifier):
         self.num_classes = layer_sizes[-1]
         self.class_labels = class_labels
         self.params = params or dict()
+        self.mode = class_mode
 
         # initialize MLP
         self.model = cv2.ANN_MLP()

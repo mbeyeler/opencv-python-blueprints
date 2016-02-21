@@ -168,7 +168,7 @@ class FaceLayout(BaseLayout):
                               label of the facial expression.
         """
         # detect face
-        success, frame, self.head = self.faces.detect(frame)
+        success, frame, self.head, (x, y) = self.faces.detect(frame)
 
         if success and self.testing.GetValue():
             # if face found: preprocess (align)
