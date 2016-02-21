@@ -1,0 +1,14 @@
+Legend:
+  + Add element
+  - Remove element
+  * Change element
+
+
+2016-02-21     Michael Beyeler <mbeyeler@uci.edu>
+  * Fix gui.py freeze on Windows (bind EVT_PAINT to panel, not frame)
+
+2015-11-15     Michael Beyeler <mbeyeler@uci.edu>
+  + Add download/installation instructions in README.md
+
+2015-10-18     Michael Beyeler <mbeyeler@uci.edu>
+  * Fix typo in chapter3/feature_matching.py

@@ -8,6 +8,10 @@ This repository contains all up-to-date source code for the following book:
 All code was tested with OpenCV 2.4.9 and Python 2.7 on Ubuntu 14.04, and is available from:
 https://github.com/mbeyeler/opencv-python-blueprints.
 
+For questions, discussions, and more detailed help please refer to the Google group:
+https://groups.google.com/d/forum/opencv-python-blueprints
+
+
 ## Software Requirements
 All projects can run on Windows, Mac, or Linux, and require the following software packages:
 * OpenCV 2.4.9 or later: Recent 32-bit and 64-bit versions as well as installation instructions are available at
