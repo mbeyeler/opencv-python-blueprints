@@ -278,7 +278,7 @@ def main():
 
     # start graphical user interface
     app = wx.App()
-    layout = FaceLayout(None, -1, 'Facial Expression Recognition', capture)
+    layout = FaceLayout(capture, title='Facial Expression Recognition')
     layout.init_algorithm()
     layout.Show(True)
     app.MainLoop()

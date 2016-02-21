@@ -80,7 +80,7 @@ def main():
 
     # start graphical user interface
     app = wx.App()
-    layout = KinectLayout(None, -1, 'Kinect Hand Gesture Recognition', capture)
+    layout = KinectLayout(capture, title='Kinect Hand Gesture Recognition')
     layout.Show(True)
     app.MainLoop()
 

@@ -51,7 +51,7 @@ def main():
 
     # start graphical user interface
     app = wx.App()
-    layout = FeatureMatchingLayout(None, -1, 'Feature Matching', capture)
+    layout = FeatureMatchingLayout(capture, title='Feature Matching')
     layout.Show(True)
     app.MainLoop()
 
