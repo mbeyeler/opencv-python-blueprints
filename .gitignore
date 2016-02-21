@@ -55,5 +55,4 @@ docs/_build/
 
 # PyBuilder
 target/
-chapter7/datasets/faces_preprocessed.pkl
 *.pkl
