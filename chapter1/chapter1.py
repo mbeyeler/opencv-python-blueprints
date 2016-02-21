@@ -92,8 +92,9 @@ def main():
 
     # start graphical user interface
     app = wx.App()
-    layout = FilterLayout(None, -1, 'Fun with Filters', capture)
-    layout.Show(True)
+    layout = FilterLayout(capture, title='Fun with Filters')
+    layout.Center()
+    layout.Show()
     app.MainLoop()
 
 

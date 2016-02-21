@@ -37,7 +37,7 @@ class BaseLayout(wx.Frame):
     """
     __metaclass__ = ABCMeta
 
-    def __init__(self, parent, id, title, capture, fps=10):
+    def __init__(self, capture, title=None, parent=None, id=-1, fps=10):
         """Class constructor
 
             This method initializes all necessary parameters and generates a
@@ -83,10 +83,10 @@ class BaseLayout(wx.Frame):
         self.timer = wx.Timer(self)
         self.timer.Start(1000./self.fps)
         self.Bind(wx.EVT_TIMER, self._on_next_frame)
-        self.Bind(wx.EVT_PAINT, self._on_paint)
 
         # allow for custom modifications
         self._init_custom_layout()
+
 
     def _create_base_layout(self):
         """Create generic layout
@@ -100,8 +100,9 @@ class BaseLayout(wx.Frame):
             means of the method self.panels_vertical.Add.
         """
         # set up video stream
-        self.pnl = wx.Panel(self, -1, size=(self.imgWidth, self.imgHeight))
+        self.pnl = wx.Panel(self, size=(self.imgWidth, self.imgHeight))
         self.pnl.SetBackgroundColour(wx.BLACK)
+        self.pnl.Bind(wx.EVT_PAINT, self._on_paint)
 
         # display the button layout beneath the video stream
         self.panels_vertical = wx.BoxSizer(wx.VERTICAL)
@@ -115,6 +116,7 @@ class BaseLayout(wx.Frame):
         self.SetMinSize((self.imgWidth, self.imgHeight))
         self.SetSizer(self.panels_vertical)
         self.Centre()
+
 
     def _on_next_frame(self, event):
         """

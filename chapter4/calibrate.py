@@ -141,7 +141,7 @@ def main():
 
     # start graphical user interface
     app = wx.App()
-    layout = CameraCalibration(None, -1, 'Camera Calibration', capture)
+    layout = CameraCalibration(capture, title='Camera Calibration')
     layout.Show(True)
     app.MainLoop()
 
