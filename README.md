@@ -5,7 +5,7 @@ This repository contains all up-to-date source code for the following book:
 > M. Beyeler (2015). "OpenCV with Python Blueprints: Design and develop advanced computer vision projects using OpenCV
 > with Python". Packt Publishing Ltd., London, England, 230 pages, ISBN 978-178528269-0.
 
-All code was tested with OpenCV 2.4.9 and Python 2.7 on Ubuntu 14.04, and is available from:
+All code was tested with OpenCV 2.4.9 and Python 2.7 on Ubuntu 14.04 and Windows 8.1, and is available from:
 https://github.com/mbeyeler/opencv-python-blueprints.
 
 For questions, discussions, and more detailed help please refer to the Google group:
