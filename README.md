@@ -2,7 +2,7 @@
 
 This repository contains all up-to-date source code for the following book:
 
-<img src="https://2.bp.blogspot.com/-0kv2Un_wtT4/VlX2XOazp3I/AAAAAAAAACE/bmZ6AsPfRKY8D6Btr10SObc6QiD8Hi0bQ/s200/2690OS_OpenCV%2Bwith%2BPython%2BBlueprints_.jpg" align="left" style="width: 220px; margin-right: 10px"/>
+<img src="https://2.bp.blogspot.com/-0kv2Un_wtT4/VlX2XOazp3I/AAAAAAAAACE/bmZ6AsPfRKY8D6Btr10SObc6QiD8Hi0bQ/s200/2690OS_OpenCV%2Bwith%2BPython%2BBlueprints_.jpg" align="left" style="width: 220px; margin-right: 5px"/>
 Michael Beyeler <br/>
 [**OpenCV with Python Blueprints: Design and develop advanced computer vision projects using OpenCV
 with Python**](http://www.amazon.com/OpenCV-Python-Blueprints-Michael-Beyeler/dp/1785282697)
@@ -10,13 +10,14 @@ with Python**](http://www.amazon.com/OpenCV-Python-Blueprints-Michael-Beyeler/dp
 Packt Publishing Ltd., London, England <br/>
 Paperback: 230 pages <br/>
 ISBN 978-178528269-0
+<br clear="both"/>
 
 All code was tested with OpenCV 2.4.9 and Python 2.7 on Ubuntu 14.04 and Windows 8.1, and is available from:
 https://github.com/mbeyeler/opencv-python-blueprints.
 
 For questions, discussions, and more detailed help please refer to the Google group:
 https://groups.google.com/d/forum/opencv-python-blueprints
-<br clear="both"/>
+
 
 
 ## Critical Reception
@@ -29,13 +30,13 @@ What readers on Amazon have to say:
 > the need of going into too many details. <br/>
 &ndash; [Sebastian Montabone](http://www.samontab.com)
 
-> Usually I'm not a big fan of technical books because they are too dull, but this one is written in an engaging 
-> manner with a few dry jokes here and there. Can only recommend! <br/>
-&ndash; lakesouth
-
 > Solid and useful book on getting ramped up with OpenCV in Python. I have found it useful several times in the recent 
 > weeks as I am exploring OpenCV. <br/>
 &ndash; bigbirdtommy
+
+> Usually I'm not a big fan of technical books because they are too dull, but this one is written in an engaging 
+> manner with a few dry jokes here and there. Can only recommend! <br/>
+&ndash; lakesouth
 
 
 
