@@ -1,5 +1,7 @@
 # OpenCV with Python Blueprints
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.154060.svg)](https://doi.org/10.5281/zenodo.154060)
+
 This repository contains all up-to-date source code for the following book:
 
 <img src="https://2.bp.blogspot.com/-0kv2Un_wtT4/VlX2XOazp3I/AAAAAAAAACE/bmZ6AsPfRKY8D6Btr10SObc6QiD8Hi0bQ/s200/2690OS_OpenCV%2Bwith%2BPython%2BBlueprints_.jpg" align="left" style="width: 220px; margin-right: 5px"/>
@@ -18,11 +20,13 @@ https://github.com/mbeyeler/opencv-python-blueprints.
 For questions, discussions, and more detailed help please refer to the Google group:
 https://groups.google.com/d/forum/opencv-python-blueprints
 
+If you use this code (or part of it) in a scientific publication, please cite as:
+> M. Beyeler, (2016). OpenCV with Python Blueprints. Zenodo. http://doi.org/10.5281/zenodo.154060
 
 
 ## Critical Reception
 
-<img src="https://1.bp.blogspot.com/-4LW_6eo4UGA/VvQ3AZ_tipI/AAAAAAAAAS0/LGZYsLqdM5M7YXudxmRNW0W9jUIoTmVYQ/s640/opencv-python-blueprints-amazon-new.png" style="width: 70%; margin-left: 15%"/>
+<img src="https://3.bp.blogspot.com/-m8yl8xCrM3Q/V9yFYMAj3YI/AAAAAAAAAq8/5IzGqAeUp9cCwq13j1EL7aunfUvvre5bQCLcB/s640/opencv-python-blueprints-amazon-new.png" style="width: 70%; margin-left: 15%"/>
 
 What readers on Amazon have to say:
 
@@ -30,9 +34,11 @@ What readers on Amazon have to say:
 > the need of going into too many details. <br/>
 &ndash; [Sebastian Montabone](http://www.samontab.com)
 
-> Solid and useful book on getting ramped up with OpenCV in Python. I have found it useful several times in the recent 
-> weeks as I am exploring OpenCV. <br/>
-&ndash; bigbirdtommy
+> Excellent book to build practical OpenCV projects! I'm still relatively new to OpenCV, but all examples are well 
+> laid out and easy to follow. The author does a good job explaining the concepts in detail and shows how they apply 
+> in real life. As a professional programmer, I especially love that you can just fork the code from GitHub and follow 
+> along. Strongly recommend to readers with basic knowledge of computer vision, machine learning, and Python!
+&ndash; Amazon Customer
 
 > Usually I'm not a big fan of technical books because they are too dull, but this one is written in an engaging 
 > manner with a few dry jokes here and there. Can only recommend! <br/>
