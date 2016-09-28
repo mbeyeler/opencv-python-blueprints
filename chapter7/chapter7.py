@@ -90,6 +90,7 @@ class FaceLayout(BaseLayout):
         """
         self.data_file = save_training_file
         self.faces = FaceDetector(face_casc, left_eye_casc, right_eye_casc)
+        self.head = None
 
         # load preprocessed dataset to access labels and PCA params
         if path.isfile(load_preprocessed_data):
