@@ -246,14 +246,15 @@ class MultiClassSVM(Classifier):
             svm_id = 0
             for c1 in xrange(self.num_classes):
                 for c2 in xrange(c1 + 1, self.num_classes):
+                    # indices where class labels are either `c1` or `c2`
                     data_id = np.where((y_train == c1) + (y_train == c2))[0]
-                    X_train_id = X_train[data_id, :]
-                    y_train_id = y_train[data_id]
 
-                    # set class label to 1 where class==c1, else 0
-                    y_train_bin = np.where(y_train_id == c1, 1, 0).flatten()
+                    # set class label to 1 where class is `c1`, else 0
+                    y_train_bin = np.where(y_train[data_id] == c1, 1, 
+                                           0).flatten()
 
-                    self.classifiers[svm_id].train(X_train_id, y_train_bin,
+                    self.classifiers[svm_id].train(X_train[data_id, :],
+                                                   y_train_bin,
                                                    params=self.params)
                     svm_id += 1
         elif self.mode == "one-vs-all":
