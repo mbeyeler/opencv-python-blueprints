@@ -1,6 +1,8 @@
 # OpenCV with Python Blueprints
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.154060.svg)](https://doi.org/10.5281/zenodo.154060)
+[![Google group](https://img.shields.io/badge/Google-group-lightgrey.svg)](https://groups.google.com/d/forum/opencv-python-blueprints)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 This repository contains all up-to-date source code for the following book:
 
@@ -20,8 +22,9 @@ https://github.com/mbeyeler/opencv-python-blueprints.
 For questions, discussions, and more detailed help please refer to the Google group:
 https://groups.google.com/d/forum/opencv-python-blueprints
 
-If you use this code (or part of it) in a scientific publication, please cite as:
-> M. Beyeler, (2016). OpenCV with Python Blueprints. Zenodo. http://doi.org/10.5281/zenodo.154060
+If you use either book or code in a scholarly publication, please cite as:
+> M. Beyeler, (2016). OpenCV with Python Blueprints. Packt Publishing Ltd., London, England, 230 pages, ISBN 978-
+178528269-0.
 
 
 ## Critical Reception
