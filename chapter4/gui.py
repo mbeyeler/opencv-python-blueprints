@@ -13,7 +13,11 @@ __author__ = "Michael Beyeler"
 __license__ = "GNU GPL 3.0 or later"
 
 
-class BaseLayout(wx.Frame):
+class Meta1(wx.Frame):
+    pass
+
+
+class BaseLayout(Meta1):
     """Abstract base class for all layouts
 
         A custom layout needs to implement at least three methods:
@@ -81,12 +85,11 @@ class BaseLayout(wx.Frame):
         """
         # set up periodic screen capture
         self.timer = wx.Timer(self)
-        self.timer.Start(1000./self.fps)
+        self.timer.Start(1000. / self.fps)
         self.Bind(wx.EVT_TIMER, self._on_next_frame)
 
         # allow for custom modifications
         self._init_custom_layout()
-
 
     def _create_base_layout(self):
         """Create generic layout
@@ -116,7 +119,6 @@ class BaseLayout(wx.Frame):
         self.SetMinSize((self.imgWidth, self.imgHeight))
         self.SetSizer(self.panels_vertical)
         self.Centre()
-
 
     def _on_next_frame(self, event):
         """

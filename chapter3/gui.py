@@ -12,8 +12,10 @@ import cv2
 __author__ = "Michael Beyeler"
 __license__ = "GNU GPL 3.0 or later"
 
+class Meta1(wx.Frame):
+    pass
 
-class BaseLayout(wx.Frame):
+class BaseLayout(Meta1):
     """Abstract base class for all layouts
 
         A custom layout needs to implement at least three methods:
