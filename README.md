@@ -59,20 +59,21 @@ installation instructions can be found at https://wiki.python.org/moin/Beginners
 * NumPy 1.9.2 or later: This package for scientific computing officially comes in 32-bit format only, and can be
 obtained from http://www.scipy.org/scipylib/download.html. The installation instructions can be found at 
 http://www.scipy.org/scipylib/building/index.html#building.
-* wxPython 2.8 or later: This GUI programming toolkit can be obtained from http://www.wxpython.org/download.php.
-Its installation instructions are given at http://wxpython.org/builddoc.php.
 
 In addition, some chapters require the following free Python modules:
-* SciPy 0.16.0 or later (Chapter 1): This scientific Python library officially comes in 32-bit only, and can be obtained
-from http://www.scipy.org/scipylib/download.html. The installation instructions can be found at
-http://www.scipy.org/scipylib/building/index.html#building.
+* wxPython 2.8 or later (Chapters 1 to 4, 7): This GUI programming toolkit can be obtained from
+  http://www.wxpython.org/download.php.
+  Its installation instructions are given at http://wxpython.org/builddoc.php.
 * matplotlib 1.4.3 or later (Chapters 4 to 7): This 2D plotting library can be obtained from
-http://matplotlib.org/downloads.html. Its installation instructions can be found by going to
-http://matplotlib.org/faq/installing_faq.html#how-to-install.
+  http://matplotlib.org/downloads.html. Its installation instructions can be found by going to
+  http://matplotlib.org/faq/installing_faq.html#how-to-install.
+* SciPy 0.16.0 or later (Chapter 1): This scientific Python library officially comes in 32-bit only, and can be
+  obtained from http://www.scipy.org/scipylib/download.html. The installation instructions can be found at
+  http://www.scipy.org/scipylib/building/index.html#building.
 * libfreenect 0.5.2 or later (Chapter 2): The libfreenect module by the OpenKinect project (http://www.openkinect.org)
-provides drivers and libraries for the Microsoft Kinect hardware, and can be obtained from
-https://github.com/OpenKinect/libfreenect. Its installation instructions can be found at
-http://openkinect.org/wiki/Getting_Started.
+  provides drivers and libraries for the Microsoft Kinect hardware, and can be obtained from
+  https://github.com/OpenKinect/libfreenect. Its installation instructions can be found at
+  http://openkinect.org/wiki/Getting_Started.
 
 Furthermore, the use of iPython (http://ipython.org/install.html) is highly recommended as it provides a flexible,
 interactive console interface.
