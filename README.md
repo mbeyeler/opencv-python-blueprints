@@ -23,9 +23,21 @@ For questions, discussions, and more detailed help please refer to the Google gr
 https://groups.google.com/d/forum/opencv-python-blueprints
 
 If you use either book or code in a scholarly publication, please cite as:
-> M. Beyeler, (2016). OpenCV with Python Blueprints. Packt Publishing Ltd., London, England, 230 pages, ISBN 978-
+> M. Beyeler, (2016). OpenCV with Python Blueprints: Design and develop advanced computer vision projects using OpenCV with Python. Packt Publishing Ltd., London, England, 230 pages, ISBN 978-
 178528269-0.
 
+Or use the following bibtex:
+```
+@book{OpenCVWithPythonBlueprints,
+	title = {{OpenCV with Python Blueprints}},
+	subtitle = {Design and develop advanced computer vision projects using {OpenCV} with {Python}},
+	author = {Michael Beyeler},
+	year = {2016},
+	pages = {230},
+	publisher = {Packt Publishing Ltd.},
+	isbn = {978-178528269-0}
+}
+```
 
 ## Critical Reception
 
