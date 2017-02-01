@@ -16,14 +16,16 @@ Paperback: 230 pages <br/>
 ISBN 978-178528269-0
 <br clear="both"/>
 
-All code was tested with OpenCV 2.4.9 and Python 2.7 on Ubuntu 14.04 and Windows 8.1, and is available from:
-https://github.com/mbeyeler/opencv-python-blueprints.
+This book demonstrates how to develop a series of intermediate to advanced projects using OpenCV and Python,
+rather than teaching the core concepts of OpenCV in theoretical lessons. Instead, the working projects
+developed in this book teach the reader how to apply their theoretical knowledge to topics such as
+image manipulation, augmented reality, object tracking, 3D scene reconstruction, statistical learning,
+and object categorization.
 
-For questions, discussions, and more detailed help please refer to the Google group:
-https://groups.google.com/d/forum/opencv-python-blueprints
+By the end of this book, readers will be OpenCV experts whose newly gained experience allows them to develop their own advanced computer vision applications.
 
 If you use either book or code in a scholarly publication, please cite as:
-> M. Beyeler, (2016). OpenCV with Python Blueprints: Design and develop advanced computer vision projects using OpenCV with Python. Packt Publishing Ltd., London, England, 230 pages, ISBN 978-
+> M. Beyeler, (2015). OpenCV with Python Blueprints: Design and develop advanced computer vision projects using OpenCV with Python. Packt Publishing Ltd., London, England, 230 pages, ISBN 978-
 178528269-0.
 
 Or use the following bibtex:
@@ -32,12 +34,19 @@ Or use the following bibtex:
 	title = {{OpenCV with Python Blueprints}},
 	subtitle = {Design and develop advanced computer vision projects using {OpenCV} with {Python}},
 	author = {Michael Beyeler},
-	year = {2016},
+	year = {2015},
 	pages = {230},
 	publisher = {Packt Publishing Ltd.},
 	isbn = {978-178528269-0}
 }
 ```
+
+All code was tested with OpenCV 2.4.9 and Python 2.7 on Ubuntu 14.04 and Windows 8.1, and is available from:
+https://github.com/mbeyeler/opencv-python-blueprints.
+
+For questions, discussions, and more detailed help please refer to the Google group:
+https://groups.google.com/d/forum/opencv-python-blueprints
+
 
 ## Critical Reception
 
@@ -58,6 +67,19 @@ What readers on Amazon have to say:
 > Usually I'm not a big fan of technical books because they are too dull, but this one is written in an engaging 
 > manner with a few dry jokes here and there. Can only recommend! <br/>
 &ndash; lakesouth
+
+
+
+## Who This Book Is for
+As part of Packt's Blueprints series, this book is for intermediate users of OpenCV who aim to master their skills
+by developing advanced practical applications. You should already have some
+experience of building simple applications, and you are expected to be familiar with
+OpenCV's concepts and Python libraries. Basic knowledge of Python programming
+is expected and assumed.
+
+By the end of this book, you will be an OpenCV expert, and your newly gained
+experience will allow you to develop your own advanced computer vision
+applications.
 
 
 
