@@ -98,6 +98,14 @@ In addition, some chapters require the following free Python modules:
 * wxPython 2.8 or later (Chapters 1 to 4, 7): This GUI programming toolkit can be obtained from
   http://www.wxpython.org/download.php.
   Its installation instructions are given at http://wxpython.org/builddoc.php.
+  If you are using Max OS 10.11 (El Capitan), try:
+  
+  ```
+  $ sudo pip install --upgrade --trusted-host wxpython.org --pre -f http://wxpython.org/Phoenix/snapshot-builds/ wxPython_Phoenix
+  ```
+  
+  See [this bug](https://github.com/mbeyeler/opencv-python-blueprints/issues/9) for context.
+  Thanks to @KaroAntonio for the fix!
 * matplotlib 1.4.3 or later (Chapters 4 to 7): This 2D plotting library can be obtained from
   http://matplotlib.org/downloads.html. Its installation instructions can be found by going to
   http://matplotlib.org/faq/installing_faq.html#how-to-install.
