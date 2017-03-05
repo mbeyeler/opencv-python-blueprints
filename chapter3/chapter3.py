@@ -23,6 +23,7 @@ class FeatureMatchingLayout(BaseLayout):
         Each captured frame is passed to the FeatureMatching class, so that an
         object of interest can be tracked.
     """
+
     def _init_custom_layout(self):
         """Initializes feature matching class"""
         self.matching = FeatureMatching(train_image='salinger.jpg')
@@ -46,8 +47,12 @@ def main():
     if not(capture.isOpened()):
         capture.open()
 
-    capture.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, 640)
-    capture.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, 480)
+    if hasattr(cv2, 'cv'):
+        capture.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, 640)
+        capture.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, 480)
+    else:
+        capture.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+        capture.set(cv2.CV_CAP_PROP_FRAME_HEIGHT, 480)
 
     # start graphical user interface
     app = wx.App()

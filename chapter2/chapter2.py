@@ -58,8 +58,8 @@ class KinectLayout(BaseLayout):
 
         # draw some helpers for correctly placing hand
         height, width = frame.shape[:2]
-        cv2.circle(img_draw, (width/2, height/2), 3, [255, 102, 0], 2)
-        cv2.rectangle(img_draw, (width/3, height/3), (width*2/3, height*2/3),
+        cv2.circle(img_draw, (width / 2, height / 2), 3, [255, 102, 0], 2)
+        cv2.rectangle(img_draw, (width / 3, height / 3), (width * 2 / 3, height * 2 / 3),
                       [255, 102, 0], 2)
 
         # print number of fingers on image
@@ -75,8 +75,12 @@ def main():
     if not(capture.isOpened()):
         capture.open(device)
 
-    capture.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, 640)
-    capture.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, 480)
+    if hasattr(cv2, 'cv'):
+        capture.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, 640)
+        capture.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, 480)
+    else:
+        capture.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+        capture.set(cv2.CV_CAP_PROP_FRAME_HEIGHT, 480)
 
     # start graphical user interface
     app = wx.App()
