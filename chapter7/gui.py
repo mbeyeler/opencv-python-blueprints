@@ -4,6 +4,8 @@
 """A module containing simple GUI layouts using wxPython"""
 
 from abc import ABCMeta, abstractmethod
+
+from noconflict import makecls
 import time
 
 import wx
@@ -39,7 +41,7 @@ class BaseLayout(Meta1):
                                  frame. It needs to return the processed RGB
                                  frame to be displayed.
     """
-    __metaclass__ = ABCMeta
+    __metaclass__ = makecls()
 
     def __init__(self, capture, title=None, parent=None, id=-1, fps=10):
         """Class constructor
