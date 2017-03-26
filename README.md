@@ -8,8 +8,7 @@ This repository contains all up-to-date source code for the following book:
 
 <img src="https://2.bp.blogspot.com/-0kv2Un_wtT4/VlX2XOazp3I/AAAAAAAAACE/bmZ6AsPfRKY8D6Btr10SObc6QiD8Hi0bQ/s200/2690OS_OpenCV%2Bwith%2BPython%2BBlueprints_.jpg" align="left" style="width: 220px; margin-right: 5px"/>
 Michael Beyeler <br/>
-[**OpenCV with Python Blueprints: Design and develop advanced computer vision projects using OpenCV
-with Python**](http://www.amazon.com/OpenCV-Python-Blueprints-Michael-Beyeler/dp/1785282697)
+<a href="http://www.amazon.com/OpenCV-Python-Blueprints-Michael-Beyeler/dp/1785282697"><b>OpenCV with Python Blueprints: Design and develop advanced computer vision projects using OpenCV with Python</b></a>
 
 Packt Publishing Ltd., London, England <br/>
 Paperback: 230 pages <br/>
