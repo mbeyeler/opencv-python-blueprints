@@ -96,7 +96,8 @@ class FaceDetector:
         height, width = head.shape[:2]
 
         # detect left eye
-        left_eye_region = head[0.2*height:0.5*height, 0.1*width:0.5*width]
+        left_eye_region = head[int(0.2 * height): int(0.5 * height),
+                               int(0.1 * width): int(0.5 * width)]
         left_eye = self.left_eye_casc.detectMultiScale(
             left_eye_region,
             scaleFactor=1.1,
@@ -105,12 +106,13 @@ class FaceDetector:
         left_eye_center = None
         for (xl, yl, wl, hl) in left_eye:
             # find the center of the detected eye region
-            left_eye_center = np.array([0.1*width + xl + wl / 2,
-                                        0.2*height + yl + hl / 2])
+            left_eye_center = np.array([0.1 * width + xl + wl / 2,
+                                        0.2 * height + yl + hl / 2])
             break  # need only look at first, largest eye
 
         # detect right eye
-        right_eye_region = head[0.2*height:0.5*height, 0.5*width:0.9*width]
+        right_eye_region = head[int(0.2 * height): int(0.5 * height),
+                                int(0.5 * width): int(0.9 * width)]
         right_eye = self.right_eye_casc.detectMultiScale(
             right_eye_region,
             scaleFactor=1.1,
@@ -119,8 +121,8 @@ class FaceDetector:
         right_eye_center = None
         for (xr, yr, wr, hr) in right_eye:
             # find the center of the detected eye region
-            right_eye_center = np.array([0.5*width + xr + wr / 2,
-                                         0.2*height + yr + hr / 2])
+            right_eye_center = np.array([0.5 * width + xr + wr / 2,
+                                         0.2 * height + yr + hr / 2])
             break  # need only look at first, largest eye
 
         # need both eyes in order to align face
@@ -151,8 +153,8 @@ class FaceDetector:
                                           eyeSizeScale)
 
         # shift center of the eyes to be centered in the image
-        rot_mat[0, 2] += desired_img_width*0.5 - eye_center[0]
-        rot_mat[1, 2] += desired_eye_y*desired_img_height - eye_center[1]
+        rot_mat[0, 2] += desired_img_width * 0.5 - eye_center[0]
+        rot_mat[1, 2] += desired_eye_y * desired_img_height - eye_center[1]
 
         # warp perspective to make eyes aligned on horizontal line and scaled
         # to right size
