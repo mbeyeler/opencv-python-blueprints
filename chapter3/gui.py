@@ -3,7 +3,8 @@
 
 """A module containing simple GUI layouts using wxPython"""
 
-from abc import ABCMeta, abstractmethod
+import abc
+import six
 import time
 
 import wx
@@ -12,9 +13,12 @@ import cv2
 __author__ = "Michael Beyeler"
 __license__ = "GNU GPL 3.0 or later"
 
+
 class Meta1(wx.Frame):
     pass
 
+
+@six.add_metaclass(abc.ABCMeta)
 class BaseLayout(Meta1):
     """Abstract base class for all layouts
 
@@ -37,7 +41,6 @@ class BaseLayout(Meta1):
                                  frame. It needs to return the processed RGB
                                  frame to be displayed.
     """
-    __metaclass__ = ABCMeta
 
     def __init__(self, capture, title=None, parent=None, id=-1, fps=10):
         """Class constructor
@@ -83,12 +86,11 @@ class BaseLayout(Meta1):
         """
         # set up periodic screen capture
         self.timer = wx.Timer(self)
-        self.timer.Start(1000./self.fps)
+        self.timer.Start(1000. / self.fps)
         self.Bind(wx.EVT_TIMER, self._on_next_frame)
 
         # allow for custom modifications
         self._init_custom_layout()
-
 
     def _create_base_layout(self):
         """Create generic layout
@@ -118,7 +120,6 @@ class BaseLayout(Meta1):
         self.SetMinSize((self.imgWidth, self.imgHeight))
         self.SetSizer(self.panels_vertical)
         self.Centre()
-
 
     def _on_next_frame(self, event):
         """
@@ -155,7 +156,7 @@ class BaseLayout(Meta1):
         """
         return self.capture.read()
 
-    @abstractmethod
+    @abc.abstractmethod
     def _init_custom_layout(self):
         """
             This method is called in the class constructor, after setting up
@@ -164,7 +165,7 @@ class BaseLayout(Meta1):
         """
         pass
 
-    @abstractmethod
+    @abc.abstractmethod
     def _create_custom_layout(self):
         """
             This method is responsible for creating the GUI layout.
@@ -176,7 +177,7 @@ class BaseLayout(Meta1):
         """
         pass
 
-    @abstractmethod
+    @abc.abstractmethod
     def _process_frame(self, frame_rgb):
         """
             This method is responsible for any post-processing that needs to be
