@@ -52,7 +52,7 @@ class PencilSketch:
 
         # if available, blend with background canvas
         if self.canvas is not None:
-            img_blend = cv2.multiply(img_blend, self.canvas, scale=1./256)
+            img_blend = cv2.multiply(img_blend, self.canvas, scale=1. / 256)
 
         return cv2.cvtColor(img_blend, cv2.COLOR_GRAY2RGB)
 
@@ -145,6 +145,7 @@ class Cartoonizer:
         The class uses a bilateral filter and adaptive thresholding to create
         a cartoon effect.
     """
+
     def __init__(self):
         pass
 
@@ -166,6 +167,9 @@ class Cartoonizer:
         # upsample image to original size
         for _ in xrange(numDownSamples):
             img_color = cv2.pyrUp(img_color)
+
+        # make sure resulting image has the same dims as original
+        img_color = cv2.resize(img_color, img_rgb.shape[:2])
 
         # -- STEPS 2 and 3 --
         # convert to grayscale and apply median blur
