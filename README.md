@@ -40,6 +40,16 @@ Or use the following bibtex:
 }
 ```
 
+Scholarly work referencing this book:
+- B Zhang et al. (2018). Automatic matching of construction onsite resources under camera views. *Automation in Construction*.
+- A Jakubović & J Velagić (2018). Image Feature Matching and Object Detection Using Brute-Force Matchers. *International Symposium ELMAR*.
+- B Zhang et al. (2018). Multi-View Matching for Onsite Construction Resources with Combinatorial Optimization. *International Symposium on Automation and Robotics in Construction (ISARC)* 35:1-7.
+- LA Marcomini (2018). Identificação automática do comportamento do tráfego a partir de imagens de vídeo. *Escola de Engenharia de São Carlos*, Master's Thesis.
+- G Laica et al. (2018). Diseño y construcción de un andador inteligente para el desplazamiento autónomo de los adultos mayores con visión reducida y problemas de movilidad del hogar de vida "Luis Maldonado Tamayo" mediante la investigación de técnicas de visión artificial. *Departamento de Ciencias de la Energía y Mecánica, Universidad de las Fuerzas Armadas ESPE*, Master's Thesis.
+- I Huitzil-Velasco et al. (2017). Test of a Myo Armband. *Revista de Ciencias Ambientales y Recursos Naturales* 3(10): 48-56.
+- Y Güçlütürk et al. (2016). Convolutional sketch inversion. *European Conference on Computer Vision (ECCV)* 810-824.
+
+
 All code was tested with OpenCV 2.4.9 and Python 2.7 on Ubuntu 14.04 and Windows 8.1, and is available from:
 https://github.com/mbeyeler/opencv-python-blueprints.
 
