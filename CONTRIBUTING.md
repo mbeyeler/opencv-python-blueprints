@@ -45,7 +45,7 @@ GitHub, clone, and develop on a branch. Steps:
 
 5. Go to the GitHub web page of your fork of the CARLsim 3 repo.
 Click the 'Pull request' button to send your changes to the project's maintainers for
-review. This will send an email to the committers.
+review. This will send an email to updaters.
 
 (If any of the above seems like magic to you, please look up the
 [Git documentation](https://git-scm.com/documentation) on the web, or ask a friend or another contributor for help.)
@@ -73,8 +73,7 @@ following rules before you submit a pull request:
 
 -  Documentation is necessary for enhancements to be accepted.
 
-
-Filing bugs
+How to fill a bug 
 -----------
 We use Github issues to track all bugs and feature requests; feel free to
 open an issue if you have found a bug or wish to see a feature implemented.
