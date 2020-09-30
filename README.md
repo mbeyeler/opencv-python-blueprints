@@ -1,4 +1,4 @@
-# OpenCV with Python Blueprints
+# OpenCV with Python Blueprints.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.154060.svg)](https://doi.org/10.5281/zenodo.154060)
 [![Google group](https://img.shields.io/badge/Google-Discussion%20group-lightgrey.svg)](https://groups.google.com/d/forum/opencv-python-blueprints)
