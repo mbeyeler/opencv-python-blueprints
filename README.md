@@ -56,7 +56,7 @@ https://github.com/mbeyeler/opencv-python-blueprints.
 For questions, discussions, and more detailed help please refer to the Google group:
 https://groups.google.com/d/forum/opencv-python-blueprints
 
-
+---
 ## Critical Reception
 
 <img src="https://3.bp.blogspot.com/-m8yl8xCrM3Q/V9yFYMAj3YI/AAAAAAAAAq8/5IzGqAeUp9cCwq13j1EL7aunfUvvre5bQCLcB/s640/opencv-python-blueprints-amazon-new.png" style="width: 70%; margin-left: 15%"/>
@@ -77,7 +77,7 @@ What readers on Amazon have to say:
 > manner with a few dry jokes here and there. Can only recommend! <br/>
 &ndash; lakesouth
 
-
+---
 
 ## Who This Book Is for
 As part of Packt's Blueprints series, this book is for intermediate users of OpenCV who aim to master their skills
@@ -90,7 +90,7 @@ By the end of this book, you will be an OpenCV expert, and your newly gained
 experience will allow you to develop your own advanced computer vision
 applications.
 
-
+---
 
 ## Software Requirements
 All projects can run on Windows, Mac, or Linux, and require the following software packages:
@@ -128,7 +128,7 @@ In addition, some chapters require the following free Python modules:
 
 Furthermore, the use of iPython (http://ipython.org/install.html) is highly recommended as it provides a flexible,
 interactive console interface.
-
+---
 ## License
 The software is released under the GNU General Public License (GPL), which is the most commonly used free software
 license according to Wikipedia. GPL allows for commercial use, distribution, modification, patent use, and private use.
